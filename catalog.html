@@ -2,13 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Барбершоп «Бородинский»</title>
+    <title>Каталог товаров</title>
   </head>
   <body>
     <header class="main-header">
       <div class="container">
         <div class="logo">
-            <img src="http://placehold.it/150x100" width="100" height="50" alt="Барбершоп «Бородинский»">
+            <a class="logo-link" href="#"><img src="http://placehold.it/150x100" width="100" height="50" alt="Барбершоп «Бородинский»"></a>
       </div>
         <nav class="main-navigation">
           <ul>
@@ -34,26 +34,27 @@
         </div>
       </div>
     </header>
-    <main class="main-content">
+    <main>
         <div class="container">
-            <h1>Средства для ухода</h1>
-            <nav class="breadcrumbs">
-                <ul>
-                    <li>
-                        <a href="#">Главная</a>
-                    </li>
-                    <li>
-                        <a href="#">Магазин</a>
-                    </li>
-                    <li>
-                        <a href="#">Средства для ухода</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="main-top">
+                <h1>Средства для ухода</h1>
+                <nav class="breadcrumbs">
+                    <ul>
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#">Магазин</a>
+                        </li>
+                        <li>
+                            <span>Средства для ухода</span>
+                        </li>
+                    </ul>
+                </nav>          
+            </div>
             <div class="filter">
-                
-                <section class="manufacturer">
-                    <h2>Производители</h2>
+                <form class="product-category">
+                    <h2>Производители</h2><!--h2 здесь есть смысл применять или нет? -->
                     <label>
                         <input type="checkbox" checked> Baxter of California
                     </label>
@@ -72,9 +73,7 @@
                     <label>
                         <input type="checkbox" checked> American Crew
                     </label>
-                </section>
-                
-                <section class="product_category">
+
                     <h2>Группы товаров:</h2>
                     <label>
                         <input type="radio" name="category" value="shaving">бритвенные принадлежности
@@ -85,62 +84,83 @@
                     <label>
                         <input type="radio" name="category" value="accessory">аксессуары
                     </label>
-                </section>
-                
-                <a class="apply" href="#">Показать</a>
-                
-            
-            
+                    
+                    <input type="submit" value="Показать">         
+                </form>
             </div>
             <div class="catalog">
                 <article class="catalog-item">
-                    <figure class="catalog-item-photo">
+                    <a href="#" class="catalog-item-photo">
                         <img src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий «Baxter of California»">
-                    </figure>
-                    <h3>Набор для путешествий «Baxter of California»</h3>
+                    </a>
+                    <a href="#" class="catalog-item-name">Набор для путешествий «Baxter of California»</a>
                     <div class="catalog-item-bottom">
                         <div class="price">2900 РУБ</div>
                         <a class="buy" href="#">Купить</a>
                     </div>
                 </article>
                 <article class="catalog-item">
-                    <figure class="catalog-item-photo">
+                    <a href="#" class="catalog-item-photo">
                         <img src="http://placehold.it/150x100" width="150" height="100" alt="Увлажняющий кондиционер «Baxter of California»">
-                    </figure>
-                    <h3>Увлажняющий кондиционер «Baxter of California»</h3>
+                    </a>
+                    <a href="#" class="catalog-item-name">Увлажняющий кондиционер «Baxter of California»</a>
+                    <div class="catalog-item-price">
+                        <div class="price">2900 РУБ</div>
+                        <a class="buy" href="#">Купить</a>
+                    </div>
+                </article>
+                <article class="catalog-item">
+                    <a href="#" class="catalog-item-photo">
+                        <img src="http://placehold.it/150x100" width="150" height="100" alt="Гель для волос «SUAVECITO»">
+                    </a>
+                    <a href="#" class="catalog-item-name">Гель для волос «SUAVECITO»</a>
                     <div class="catalog-item-bottom">
                         <div class="price">2900 РУБ</div>
                         <a class="buy" href="#">Купить</a>
                     </div>
                 </article>
                 <article class="catalog-item">
-                    <figure class="catalog-item-photo">
-                        <img src="http://placehold.it/150x100" width="150" height="100" alt="Набор для путешествий «Baxter of California»">
-                    </figure>
-                    <h3>Набор для путешествий «Baxter of California»</h3>
+                    <a href="#" class="catalog-item-photo">
+                        <img src="http://placehold.it/150x100" width="150" height="100" alt="Глина для укладки волос «American crew»">
+                    </a>
+                    <a href="#" class="catalog-item-name">Глина для укладки волос «American crew»</a>
+                    <div class="catalog-item-bottom">
+                        <div class="price">2900 РУБ</div>
+                        <a class="buy" href="#">Купить</a>
+                    </div>
+                </article>
+                <article class="catalog-item">
+                    <a href="#" class="catalog-item-photo">
+                        <img src="http://placehold.it/150x100" width="150" height="100" alt="Гель для волос «AMERICAN CREW»">
+                    </a>
+                    <a href="#" class="catalog-item-name">Гель для волос «AMERICAN CREW»</a>
+                    <div class="catalog-item-bottom">
+                        <div class="price">2900 РУБ</div>
+                        <a class="buy" href="#">Купить</a>
+                    </div>
+                </article>
+                <article class="catalog-item">
+                    <a href="#" class="catalog-item-photo">
+                        <img src="http://placehold.it/150x100" width="150" height="100" alt="Набор для бритья «Baxter of California»">
+                    </a>
+                    <a href="#" class="catalog-item-name">Набор для бритья «Baxter of California»</a>
                     <div class="catalog-item-bottom">
                         <div class="price">2900 РУБ</div>
                         <a class="buy" href="#">Купить</a>
                     </div>
                 </article>
                 
-                
-                <div class="second-navigation">
-                    <a class="page-number" href="#">1</a>
-                    <a class="page-number active" href="#">2</a>
-                    <a class="page-number" href="#">3</a>
-                    <a class="page-number" href="#">4</a>
-                
-                
+                <div class="pagination">
+                    <ul>
+                        <li><a class="page-number" href="#">1</a></li>
+                        <li><span class="page-number active">2</span></li>
+                        <li><a class="page-number" href="#">3</a></li>
+                        <li><a class="page-number" href="#">4</a></li>
+ 
+                    </ul>
                 </div>
-            
-            
             </div>
-        
-        
         </div>
-      
-    
     </main>
       
     <footer class="main-footer">
