@@ -42,6 +42,7 @@ h2{
 
 .main-navigation{
   float:left;
+  width: 670px;
  }
 .logo{
     float:left;
@@ -73,7 +74,8 @@ text-decoration: none;
 }
 
 .user-block{
-     float:right;
+    float:right;
+    width: 75px;
    
 }
 
