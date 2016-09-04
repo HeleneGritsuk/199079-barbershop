@@ -35,37 +35,49 @@ h2{
 /*-------------хэдер-----------------------*/
 .main-header{
     background-color: #000;
-    padding-top: 20px;
-    padding-bottom: 25px;
-    
+    min-height: 71px;
+    font-size: 16px;
+    line-height: 20px;
 }
 
-.main-navigation{
+.main-navigation-block{
   float:left;
-  width: 670px;
+  width: 680px;
  }
 .logo{
     float:left;
+    width:111px;
+    margin-top: 20px;
+    margin-right: 20px;
 }
-.main-navigation ul{
+.main-menu{
     float:right;
     list-style: none;
     padding:0;
     margin:0;
     font-size:0px;
+    width:545px;
 }
-.main-navigation>ul>li{
+.main-menu>li{
     display:inline-block;
-    margin-left: 40px;
-   
-   
-   
+    padding: 0px 15px;
+    margin:0; 
 }
-.main-navigation>ul>li>a{
-    display:block;
-    margin:0;
+.main-menu>li>a{
+    display: block;
+    padding: 24px 0px;
+    font-size: 16px;
+    line-height: 20px;
+    box-sizing: border-box;
+    min-height: 72px;
+}
+.active-item a{
+    border-bottom: 4px solid #fff;
     
-     font-size:14px;
+}
+.main-menu li:hover,
+.user-block-menu li:hover {
+    background-color: #242424;
 }
 .main-header a{
 color:#fff;
@@ -75,15 +87,36 @@ text-decoration: none;
 
 .user-block{
     float:right;
-    width: 75px;
+    width: 110px;
    
 }
+.user-block-menu{
+    list-style: none;
+    padding:0;
+    margin:0;
+    font-size:0px;
+}
+.user-block-menu img{
+    float:left;
+}
+.user-block-menu>li{
+    display:inline-block;
+    padding: 0px 15px;
+    margin:0; 
+}
 
-
+.user-block-menu>li>a{
+    display: block;
+    padding: 24px 0px;
+    font-size: 16px;
+    line-height: 20px;
+    box-sizing: border-box;
+    min-height: 72px;
+}
 /*-------------футер-----------------------*/
 .main-footer {
-    padding-top:60px;
-    padding-bottom:40px;
+    padding-top: 54px;
+    padding-bottom: 34px;
     background-color: #252525;
     color: #fff;
 }
