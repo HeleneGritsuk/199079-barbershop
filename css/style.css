@@ -7,6 +7,7 @@ body {
     line-height:24px;
     margin: 0;
     padding: 0;
+    text-transform: uppercase;
     
 }
 .clearfix::after {
@@ -120,6 +121,9 @@ text-decoration: none;
     background-color: #252525;
     color: #fff;
 }
+.main-footer a{
+    color:#fff;
+}
 .footer-contacts{
     float:left;
     width:320px;
@@ -169,6 +173,9 @@ main{
     padding-top: 34px;
     padding-bottom: 50px;
 }
+main a{
+    color:#000;
+}
 .main-top{
     margin-bottom: 55px;
 }
@@ -201,6 +208,9 @@ main{
     float: right;
     width:390px;
 }
+.item-description p{
+    margin-bottom: 40px;
+}
 .item-info{
 margin-bottom: 24px;
 }
@@ -214,6 +224,7 @@ margin-bottom: 24px;
 }
 .catalog-item-price{
     font-size: 0;
+    margin-bottom: 43px;
 }
 .price{
     width:109px;
@@ -222,6 +233,7 @@ margin-bottom: 24px;
     display: inline-block;
     font-size: 14px;
     padding: 15px 20px;
+    text-align: center;
 }
 .buy{
     width:109px;
@@ -232,6 +244,29 @@ margin-bottom: 24px;
     font-size: 14px;
     padding: 15px 10px;
     text-decoration: none;
+    text-align: center;
+}
+.kit-items{
+    margin: 0;
+    padding: 0;
+    
+}
+.kit-items li{
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+}
+.kit-items li::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width:7px;
+    height: 7px;
+    background: #000;
+    left:0;
+    transform: rotate(45deg);
+    top:50%;
+    margin-top: -3.5px;
 }
 .breadcrumbs{
     padding: 0;
@@ -248,6 +283,12 @@ margin-bottom: 24px;
     padding: 0 20px;
     text-decoration: none;
     position: relative;
+    color: #000;
+}
+.breadcrumbs li:first-child a{
+    
+    padding-left:0;
+   
 }
 .breadcrumbs li a::after{
     content: "";
