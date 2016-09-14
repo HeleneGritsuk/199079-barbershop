@@ -312,6 +312,52 @@ margin-bottom: 24px;
     float:left;
     width:220px;
 }
+
+.product-category fieldset{
+    border:none;
+}
+.filter-radio{
+    padding: 0 20px;
+    display: block;
+    position: relative;
+}
+.filter-radio input[type="checkbox"]{
+    display: none;
+}
+.filter-radio input[type="checkbox"]+.checkbox-indicator{
+    position: absolute;
+    top: 3px;
+    left:0;
+    width:17px;
+    height: 17px;
+    border: 2px solid black;
+}
+.filter-radio input[type="checkbox"]:checked+.checkbox-indicator::before{
+    content:"";
+    position: absolute;
+    top: 3px;
+    left:0;
+    width:14px;
+    height: 2px;
+    background: black;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.filter-radio input[type="checkbox"]:checked+.checkbox-indicator::after{
+    content:"";
+    position: absolute;
+    top: 3px;
+    left:0;
+    width:14px;
+    height: 2px;
+    background: black;
+     -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
 .catalog{
     float:right;
     width:700px;
